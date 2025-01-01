@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updater</title>
+  <link rel="stylesheet" href="../styles/updater.css"> <!-- Correct path -->
+</head>
+<body>
+  <div class="container">
+    <h1>App Updater</h1>
+    <div id="message">Initializing...</div>
+    <div id="buttons">
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+  </div>
+  <script>
+    const { ipcRenderer } = window.electron;
+
+    const messageDiv = document.getElementById('message');
+    const buttonsDiv = document.getElementById('buttons');
+    const yesButton = document.getElementById('yes');
+    const noButton = document.getElementById('no');
+
+    ipcRenderer.on('update-message', (event, message) => {
+      messageDiv.innerText = message;
+    });
+
+    ipcRenderer.on('show-buttons', (event, show) => {
+      buttonsDiv.style.display = show ? 'flex' : 'none'; // Show buttons only if there's an update
+    });
+
+    yesButton.addEventListener('click', () => {
+      ipcRenderer.send('updater-response', 'yes');
+      buttonsDiv.style.display = 'none'; // Hide buttons after click
+    });
+
+    noButton.addEventListener('click', () => {
+      ipcRenderer.send('updater-response', 'no');
+      buttonsDiv.style.display = 'none'; // Hide buttons after click
+    });
+  </script>
+</body>
+</html>

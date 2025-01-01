@@ -1,0 +1,63 @@
+/* General page styles */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #000; /* Black background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #000;
+  color: white;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#message {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+#buttons {
+  display: none; /* Hidden by default */
+  justify-content: space-around;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #555;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+button:active {
+  background-color: #999;
+  transform: scale(0.98);
+}
