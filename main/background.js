@@ -25,8 +25,10 @@ function createUpdaterWindow() {
   global.updaterWindow = new BrowserWindow({
     width: 400,
     height: 300,
-    frame: false,
+    frame: false, // Disable default toolbar
     alwaysOnTop: true,
+    resizable: false, // Disable resizing
+    maximizable: false, // Disable maximize button
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
@@ -53,9 +55,12 @@ function createMainWindow() {
     mainWindow.close();
   }
   
-  mainWindow = createWindow('main', {
+  mainWindow = new BrowserWindow({
     width: 1000,
     height: 600,
+    frame: false, // Disable default toolbar
+    resizable: false, // Disable resizing
+    maximizable: false, // Disable maximize button
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
@@ -83,6 +88,15 @@ ipcMain.on('launch-app', () => {
     global.updaterWindow.close();
   }
   createMainWindow();
+});
+
+// Handle window control events
+ipcMain.on('minimize-window', () => {
+  if (mainWindow) mainWindow.minimize();
+});
+
+ipcMain.on('close-window', () => {
+  if (mainWindow) mainWindow.close();
 });
 
 // Open external links in the default browser

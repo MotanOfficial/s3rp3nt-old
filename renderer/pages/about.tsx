@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
+import CustomToolbar from '../components/CustomToolbar'
 
 export default function AboutPage() {
   const [version, setVersion] = useState('')
@@ -15,7 +16,7 @@ export default function AboutPage() {
 
   const openGithub = () => {
     if (typeof window !== 'undefined' && window.electron) {
-      window.electron.ipcRenderer.send('open-external-link', 'https://github.com/MotanOfficial/s3rp3nt')
+      window.electron.ipcRenderer.send('open-external-link', 'https://github.com/your-repo')
     }
   }
 
@@ -24,6 +25,7 @@ export default function AboutPage() {
       <Head>
         <title>About - Nextron App</title>
       </Head>
+      <CustomToolbar />
       <div className="bg-black text-white flex flex-col items-center justify-center h-screen font-sans text-center">
         <h1 className="text-4xl mb-4">My Nextron App</h1>
         <p id="version" className="text-xl mb-4">Version: {version}</p>

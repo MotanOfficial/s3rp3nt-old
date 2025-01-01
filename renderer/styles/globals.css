@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for toolbar icons */
+.icon-hover {
+  transition: transform 0.2s, filter 0.2s; /* Add transition for smooth animation */
+}
+
+.icon-hover:hover {
+  transform: scale(1.1); /* Make the icon slightly bigger */
+  filter: drop-shadow(0 0 5px white); /* Add white glow effect */
+}
+
+/* Remove yellow rectangle focus outline */
+button:focus {
+  outline: none;
+}
+
+/* Make toolbar draggable */
+.custom-toolbar {
+  -webkit-app-region: drag;
+}
+
+button, .icon-hover {
+  -webkit-app-region: no-drag;
+}

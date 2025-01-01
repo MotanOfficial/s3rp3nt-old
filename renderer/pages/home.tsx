@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import CustomToolbar from '../components/CustomToolbar'
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Head>
         <title>Home - Nextron App</title>
       </Head>
+      <CustomToolbar />
       <div className="bg-black text-white flex flex-col items-center justify-center h-screen font-sans text-center">
         <h1 className="text-4xl mb-4">Welcome to My Nextron App</h1>
         <div className="space-x-4">
