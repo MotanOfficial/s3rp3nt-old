@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './colors.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-glow {
+    color: white; /* Keep the text white */
+    transition: 
+      transform 0.2s ease-in-out, 
+      text-shadow 0.3s ease-in-out, 
+      -webkit-text-stroke 0.2s ease-in-out; /* Add transition for outline */
+    user-select: none; /* Prevent text selection */
+    -webkit-text-stroke: 0px black; /* No outline initially */
+  }
+
+  .font-glow-hover:hover {
+    transform: scale(1.05); /* Slight scale-up */
+    -webkit-text-stroke: 0.5px black; /* Thinner black outline when hovered */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7); /* White glow effect */
+  }
+}
+
 /* Custom styles for toolbar icons */
 .icon-hover {
   transition: transform 0.2s, filter 0.2s; /* Add transition for smooth animation */
@@ -9,7 +33,7 @@
 
 .icon-hover:hover {
   transform: scale(1.1); /* Make the icon slightly bigger */
-  filter: drop-shadow(0 0 5px white); /* Add white glow effect */
+  filter: drop-shadow(0 0 5px var(--color-accent)); /* Add accent glow effect */
 }
 
 /* Remove yellow rectangle focus outline */

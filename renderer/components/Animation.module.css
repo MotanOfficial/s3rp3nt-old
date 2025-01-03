@@ -1,0 +1,61 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 60px; /* Distance from the bottom */
+  left: 20px; /* Position near the left side of the page */
+  z-index: 10;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+}
+
+.button > a {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2); /* Initial background color */
+  border-radius: 60px;
+  color: white;
+  display: inline-flex;
+  justify-content: flex-start; /* Text and icon on opposite sides */
+  height: 48px;
+  overflow: hidden;
+  position: absolute;
+  left: 0; /* Position it on the left */
+  text-decoration: none;
+  max-width: 48px;
+  transition: max-width 0.5s ease-in-out, background-color 0.3s ease; /* Only width and background transition */
+}
+
+/* Hover effect */
+.button > a:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Lighten on hover */
+}
+
+/* Active state (when clicked) with width expansion and color change */
+.button:active > a {
+  max-width: 300px; /* Expanded width */
+  background-color: rgba(255, 0, 0, 0.5); /* Less saturated red with transparency */
+}
+
+/* Icon positioning on the left side */
+.icon {
+  font-size: 24px;
+  margin: 0;
+  padding: 0 12px; /* Space for centering the arrow */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the arrow */
+  height: 100%; /* Full height to align properly */
+}
+
+/* Text positioning on the right side */
+.text {
+  white-space: nowrap;
+  margin-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
