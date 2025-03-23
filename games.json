@@ -2,5 +2,6 @@
   { "processName": "GTA5.exe" },
   { "processName": "SystemSettings.exe" },
   { "processName": "Spotify.exe" },
-  { "processName": "parsecd.exe" }
+  { "processName": "parsecd.exe" },
+  { "processName": "Discord.exe" }
 ]
