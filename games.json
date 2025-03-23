@@ -16,8 +16,8 @@
   },
   { 
     "processName": "parsecd.exe",
-    "name": "Parse CD",
-    "type": "game"
+    "name": "Parsec",
+    "type": "app"
   },
   { 
     "processName": "Discord.exe",
