@@ -70,11 +70,6 @@
     "type": "app"
   },
   {
-    "processName": "chrome.exe",
-    "name": "Google Chrome",
-    "type": "app"
-  },
-  {
     "processName": "firefox.exe",
     "name": "Mozilla Firefox",
     "type": "app"
