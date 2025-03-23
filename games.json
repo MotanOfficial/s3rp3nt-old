@@ -1,8 +1,32 @@
 [
-  { "processName": "GTA5.exe" },
-  { "processName": "SystemSettings.exe" },
-  { "processName": "Spotify.exe" },
-  { "processName": "parsecd.exe" },
-  { "processName": "Discord.exe" },
-  { "processName": "Code.exe" }
+  { 
+    "processName": "GTA5.exe",
+    "name": "Grand Theft Auto V",
+    "type": "game"
+  },
+  { 
+    "processName": "SystemSettings.exe",
+    "name": "System Settings",
+    "type": "app"
+  },
+  { 
+    "processName": "Spotify.exe",
+    "name": "Spotify",
+    "type": "app"
+  },
+  { 
+    "processName": "parsecd.exe",
+    "name": "Parse CD",
+    "type": "game"
+  },
+  { 
+    "processName": "Discord.exe",
+    "name": "Discord",
+    "type": "app"
+  },
+  { 
+    "processName": "Code.exe",
+    "name": "Visual Studio Code",
+    "type": "app"
+  }
 ]
