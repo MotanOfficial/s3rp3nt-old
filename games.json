@@ -3,5 +3,6 @@
   { "processName": "SystemSettings.exe" },
   { "processName": "Spotify.exe" },
   { "processName": "parsecd.exe" },
-  { "processName": "Discord.exe" }
+  { "processName": "Discord.exe" },
+  { "processName": "Code.exe" }
 ]
