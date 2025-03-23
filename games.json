@@ -1,32 +1,132 @@
 [
-  { 
+  {
     "processName": "GTA5.exe",
     "name": "Grand Theft Auto V",
     "type": "game"
   },
-  { 
+  {
     "processName": "SystemSettings.exe",
     "name": "System Settings",
     "type": "app"
   },
-  { 
+  {
     "processName": "Spotify.exe",
     "name": "Spotify",
     "type": "app"
   },
-  { 
+  {
     "processName": "parsecd.exe",
     "name": "Parsec",
     "type": "app"
   },
-  { 
+  {
     "processName": "Discord.exe",
     "name": "Discord",
     "type": "app"
   },
-  { 
+  {
     "processName": "Code.exe",
     "name": "Visual Studio Code",
+    "type": "app"
+  },
+  {
+    "processName": "fortniteclient.exe",
+    "name": "Fortnite",
+    "type": "game"
+  },
+  {
+    "processName": "csgo.exe",
+    "name": "Counter-Strike: Global Offensive",
+    "type": "game"
+  },
+  {
+    "processName": "MinecraftLauncher.exe",
+    "name": "Minecraft",
+    "type": "game"
+  },
+  {
+    "processName": "LeagueClient.exe",
+    "name": "League of Legends",
+    "type": "game"
+  },
+  {
+    "processName": "steam.exe",
+    "name": "Steam",
+    "type": "app"
+  },
+  {
+    "processName": "EpicGamesLauncher.exe",
+    "name": "Epic Games Launcher",
+    "type": "app"
+  },
+  {
+    "processName": "Zoom.exe",
+    "name": "Zoom",
+    "type": "app"
+  },
+  {
+    "processName": "Slack.exe",
+    "name": "Slack",
+    "type": "app"
+  },
+  {
+    "processName": "chrome.exe",
+    "name": "Google Chrome",
+    "type": "app"
+  },
+  {
+    "processName": "firefox.exe",
+    "name": "Mozilla Firefox",
+    "type": "app"
+  },
+  {
+    "processName": "vscode.exe",
+    "name": "Visual Studio Code",
+    "type": "app"
+  },
+  {
+    "processName": "blizzardlauncher.exe",
+    "name": "Blizzard Battle.net",
+    "type": "app"
+  },
+  {
+    "processName": "Origin.exe",
+    "name": "Origin",
+    "type": "app"
+  },
+  {
+    "processName": "AdobePhotoshop.exe",
+    "name": "Adobe Photoshop",
+    "type": "app"
+  },
+  {
+    "processName": "AfterFX.exe",
+    "name": "Adobe After Effects",
+    "type": "app"
+  },
+  {
+    "processName": "autocad.exe",
+    "name": "AutoCAD",
+    "type": "app"
+  },
+  {
+    "processName": "steamwebhelper.exe",
+    "name": "Steam Web Helper",
+    "type": "app"
+  },
+  {
+    "processName": "notepad++.exe",
+    "name": "Notepad++",
+    "type": "app"
+  },
+  {
+    "processName": "spotifywebhelper.exe",
+    "name": "Spotify Web Helper",
+    "type": "app"
+  },
+  {
+    "processName": "skype.exe",
+    "name": "Skype",
     "type": "app"
   }
 ]
