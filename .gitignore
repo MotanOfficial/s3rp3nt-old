@@ -12,3 +12,14 @@ next-env.d.ts
 /app
 dist
 .vscode
+/renderer/out
+
+received_files
+temp_uploads
+test-cache-dir
+shared
+audio_cache.db
+audio_cache.db-shm
+audio_cache.db-wal
+DiscordRichPresenceApi.exe
+ffmpeg.exe
